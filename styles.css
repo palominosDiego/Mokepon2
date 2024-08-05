@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+body {
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    background: url(./assets/Fondo.png); /* Gradiente de arcoíris */
+    background-size: cover; /* Ajusta la imagen para que cubra todo el fondo */
+    background-blend-mode: overlay; /* Mezcla el gradiente con la imagen */
+}
+
+#Selecionar-mascota {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo {
+    color: #ffeb3b; /* Amarillo brillante */
+    margin-bottom: 20px;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 500%;
+    text-shadow: 
+    0 0 5px #ffeb3b, 
+    0 0 10px #ffeb3b, 
+    0 0 15px #ffeb3b, 
+    0 0 20px #ff4500, 
+    0 0 25px #ff4500, 
+    0 0 30px #ff4500, 
+    0 0 35px #ff4500; /* Efecto de rayo */
+    -webkit-text-stroke: 2px #0892d0; /* Borde azul eléctrico */
+    
+}
+
+.subtitulo {
+    font-size: 250%;
+    color: #462f2c;
+    background-color: rgba(255, 255, 255, 0.5); /* Fondo blanco semi transparente */
+}
+
+.tarjetas {
+    display: flex;
+    gap: 10px;
+}
+
+.tarjeta-de-mokepon {
+    width: 200px;
+    height: 100px;
+    background: #11468f; /* Azul oscuro */
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    justify-content: space-between; /* Asegura que el contenido se distribuya con espacio entre ellos */
+    align-items: stretch;
+    color: #fff;
+    margin: 10px;
+    border: 1px solid #ff1493; /* Rosa fuerte */
+    writing-mode: vertical-rl; /* Esto pone el texto en vertical */
+    text-orientation: upright; /* Esto asegura que las letras estén en posición vertical */
+    display: flex;
+    transition: transform 0,3s ease, border-color 0,3s ease; /* Transiciones suaves */
+    flex-direction: column-reverse;
+    justify-content: space-evenly    
+    
+}
+
+input[type="radio"]:checked + .tarjeta-de-mokepon {
+    border-color: white; 
+    transform: scale(1.1); /* Aumenta el tamaño para destacar */
+}
+
+.tarjeta-de-mokepon img {
+    width: 80px;
+    order: 2; /* Asegura que la imagen esté al lado derecho */
+}
+
+#boton-mascota{
+    width: 180px;
+    height: 40px;
+    border-radius: 20px;
+    background: transparent;
+    border: 2px solid whitesmoke;
+    font-family: "Orbitron", sans-serif;
+    margin-top: 30px;
+    font-size: 20px;
+    text-shadow: 
+    0 0 5px #ffeb3b, 
+    0 0 10px #ffeb3b, 
+    0 0 15px #ffeb3b, 
+    0 0 20px #ff4500, 
+    0 0 25px #ff4500, 
+    0 0 30px #ff4500, 
+    0 0 35px #ff4500; /* Efecto de rayo */
+    -webkit-text-stroke: 1px #0892d0; /* Borde azul eléctrico */
+    background-color: rgba(255, 255, 255, 0.5); /* Fondo blanco semi transparente */
+
+}
+
+#Selecionar-ataque{
+    flex-direction: column;
+    align-items: center;
+}
+
+.boton-ataque{
+    width: 180px;
+    height: 40px;
+    margin: 10px;
+    border-radius: 20px;
+    background: transparent;
+    border: 2px solid whitesmoke;
+    font-family: "Orbitron", sans-serif;
+    font-size: 20px;
+    text-shadow: 
+    0 0 5px #ffeb3b, 
+    0 0 10px #ffeb3b, 
+    0 0 15px #ffeb3b, 
+    0 0 20px #ff4500, 
+    0 0 25px #ff4500, 
+    0 0 30px #ff4500, 
+    0 0 35px #ff4500; /* Efecto de rayo */
+    -webkit-text-stroke: 1px #0892d0; /* Borde azul eléctrico */
+    background-color: rgba(255, 255, 255, 0.5); /* Fondo blanco semi transparente */
+}
+
+#Tarjeras-de-Juego{
+    display: flex;
+    flex-direction: column;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+.Tarjeta-Jugador{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    border: 2px solid whitesmoke;
+    width: 200px; /* Ajusta el ancho según tus necesidades */
+    height: 300px; /* Ajusta la altura según tus necesidades */
+    background-color: rgba(255, 255, 255, 0.5); /* Fondo blanco semi transparente */
+}
+
+.Juego{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    border: 2px solid whitesmoke;
+    width: 200px; /* Ajusta el ancho según tus necesidades */
+    min-height: 300px; /* Altura mínima */
+    background-color: rgba(255, 255, 255, 0.5); /* Fondo blanco semi transparente */
+}
+.Tarjeta-Contrincante{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    border: 2px solid whitesmoke;
+    width: 200px; /* Ajusta el ancho según tus necesidades */
+    height: 300px; /* Ajusta la altura según tus necesidades */
+    background-color: rgba(255, 255, 255, 0.5); /* Fondo blanco semi transparente */
+}
+
+#boton-reiniciar{
+    width: 180px;
+    height: 40px;
+    margin: 10px;
+    border-radius: 20px;
+    background: transparent;
+    border: 2px solid whitesmoke;
+    font-family: "Orbitron", sans-serif;
+    font-size: 20px;
+    text-shadow: 
+    0 0 5px #ffeb3b, 
+    0 0 10px #ffeb3b, 
+    0 0 15px #ffeb3b, 
+    0 0 20px #ff4500, 
+    0 0 25px #ff4500, 
+    0 0 30px #ff4500, 
+    0 0 35px #ff4500; /* Efecto de rayo */
+    -webkit-text-stroke: 1px #0892d0; /* Borde azul eléctrico */
+    background-color: rgba(255, 255, 255, 0.5); /* Fondo blanco semi transparente */
+}
+
+
+input{
+    display:none
+}
